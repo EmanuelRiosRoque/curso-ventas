@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+<<<<<<< HEAD
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | Dashboard </title>
 
   @include('components.layouts.partials.style')
+=======
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{$title ?? config('app.name')}}</title>
+    @include('components.layouts.partials.style')
+>>>>>>> 1e2e4743b76a0d466339833f5afbb0d9a50bbf7d
 </head>
+
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
-<div class="wrapper">
+    <div class="wrapper">
 
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        </div>
 
-  <!-- Navbar -->
-  @include('components.layouts.partials.navbar')
-  <!-- /.navbar -->
+        <!-- Navbar -->
+        @include('components.layouts.partials.navbar')
+        <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  @include('components.layouts.partials.sidebar')
+        <!-- Main Sidebar Container -->
+        @include('components.layouts.partials.sidebar')
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    @include('components.layouts.partials.content-header')
-    <!-- /.content-header -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            @include('components.layouts.partials.content-header')
+            <!-- /.content-header -->
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
 
-        {{$slot}}
-        <!-- /.row -->
-      </div><!--/. container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+                    {{$slot}}
+                    <!-- /.row -->
+                </div>
+                <!--/. container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
 
 
 
-  <!-- Main Footer -->
-  @include('components.layouts.partials.footer')
-</div>
-<!-- ./wrapper -->
+        <!-- Main Footer -->
+        @include('components.layouts.partials.footer')
+    </div>
+    <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
-@include('components.layouts.partials.scrips')
-<!-- PLUGINS -->
+    <!-- REQUIRED SCRIPTS -->
+    @include('components.layouts.partials.scripts')
+    <!-- PLUGINS -->
 
 </body>
+
 </html>
