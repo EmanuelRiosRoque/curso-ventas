@@ -46,12 +46,16 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                     <a class="btn btn-default btn-flat">Perfil</a>
-                    {{-- --}}
-
-                    {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"> --}}
-                        {{-- @csrf
-                    </form> --}}
-                </li>
+                    <a class="btn btn-default btn-flat float-right" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                     Salir
+                 </a>
+          
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                     @csrf
+                 </form>
+                  </li>
             </ul>
         </li>
 
