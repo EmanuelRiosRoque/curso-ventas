@@ -2,18 +2,11 @@
 <html lang="es">
 
 <head>
-<<<<<<< HEAD
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard </title>
+   <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AdminLTE 3 | Dashboard </title>
 
-  @include('components.layouts.partials.style')
-=======
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{$title ?? config('app.name')}}</title>
-    @include('components.layouts.partials.style')
->>>>>>> 1e2e4743b76a0d466339833f5afbb0d9a50bbf7d
+        @include('components.layouts.partials.style')
 </head>
 
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
